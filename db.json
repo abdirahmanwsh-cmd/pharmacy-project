@@ -1,0 +1,17 @@
+{
+  "medicines": [
+    { "id": 1, "name": "Paracetamol", "price": 2.5 },
+    { "id": 2, "name": "Amoxicillin", "price": 5 },
+    { "id": 3, "name": "Ibuprofen", "price": 3 },
+    { "id": 4, "name": "Vitamin C", "price": 4 }
+  ],
+  "sales": {
+    "totalOrders": 120,
+    "revenue": 350
+  },
+  "orders": [
+    { "id": 101, "status": "Processing" },
+    { "id": 102, "status": "Out for Delivery" },
+    { "id": 103, "status": "Delivered" }
+  ]
+}

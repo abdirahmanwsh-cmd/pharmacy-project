@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MediLink - Medicines</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">💊 MediLink</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html" class="active">Medicines</a></li>
+        <li><a href="tracking.html">Track Order</a></li>
+        <li><a href="pharmacy.html">Pharmacy</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Banner -->
+  <section class="banner-section">
+    <img class="banner-img" src="https://plus.unsplash.com/premium_photo-1668487826830-2eb44ef9d764?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cGhhcm1hY3klMjBsb2dvfGVufDB8fDB8fHww" alt="Medicines">
+    <div class="banner-text">
+      <h2>Find and Order Medicines</h2>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section class="products-page">
+    <input type="text" id="searchBox" placeholder="Search medicine...">
+    <button onclick="searchMedicine()">Search</button>
+
+    <div id="searchResults" class="products-list"></div>
+
+    <h3>Your Cart</h3>
+    <div id="cartItems"></div>
+    <button onclick="placeOrder()" class="btn">Checkout</button>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>📧 Email: <a href="mailto:Abdirahman.wsh@gmail.com">Abdirahman.wsh@gmail.com</a></p>
+    <p>📱 Instagram: <a href="https://instagram.com/medilink" target="_blank">instagram.com/medilink</a></p>
+    <p>🌐 Facebook: <a href="https://facebook.com/medilink" target="_blank">facebook.com/medilink</a></p>
+    <p>&copy; 2025 MediLink. All Rights Reserved.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
