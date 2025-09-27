@@ -65,7 +65,8 @@ The goal is to show how customers can **search and order medicines online**, whi
 - **Password:** `pharmacy123`
 
 ---
-
+## live link
+https://abdirahmanwsh-cmd.github.io/pharmacy-project/
 
 ## 📬 Contact
 
