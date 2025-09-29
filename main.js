@@ -1,14 +1,10 @@
-// ============================
-// main.js - All site functions
-// ============================
-
-// --- Fetch data ---
+//  Fetch data
 async function fetchData() {
   const res = await fetch('db.json');
   return await res.json();
 }
 
-// --- Product Search + Cart ---
+//  Product Search + Cart
 let cart = [];
 
 async function searchMedicine() {
@@ -48,7 +44,7 @@ function placeOrder() {
   renderCart();
 }
 
-// --- Order Tracking ---
+//  Order Tracking
 async function trackOrder() {
   const id = parseInt(document.getElementById('orderId').value);
   const data = await fetchData();
@@ -59,7 +55,7 @@ async function trackOrder() {
     : `<p>❌ Order not found.</p>`;
 }
 
-// --- Pharmacy Login + Stock Management ---
+// Pharmacy Login + Stock Management
 async function pharmacyLogin() {
   const password = document.getElementById('pharmacyPassword').value;
   if (password === "pharmacy123") {
@@ -87,7 +83,7 @@ function addMedicine() {
   }
 }
 
-// --- Dashboard ---
+//  Dashboard 
 async function loadDashboard() {
   const data = await fetchData();
   if (document.getElementById('salesData')) {
